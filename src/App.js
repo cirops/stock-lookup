@@ -1,12 +1,19 @@
+import { useState } from 'react';
+
 import { useForm } from "react-hook-form";
+
+import { fetchStocks } from "./services/AlphaVantage";
 
 import { Footer } from "./components/Footer";
 
 function App() {
   const { register, handleSubmit, formState: { errors }} = useForm();
+  const [stocks, setStocks] = useState({});
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const res = await fetchStocks(data);
+    console.log(res);
+    setStocks(res);
   };
 
   return (
