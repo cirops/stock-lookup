@@ -17,7 +17,7 @@ This is a Stock Lookup app. In it, the user can retrieve information for their f
 ## Roadmap
 - [x] Add this README;
 - [x] Initial CRA cleanup;
-- [ ] Build the form to retrieve user parameters;
+- [x] Build the form to retrieve user parameters;
 - [ ] Get the data from the API;
 - [ ] Setup Chart.JS;
 - [ ] Feed API data to Chart.JS;
